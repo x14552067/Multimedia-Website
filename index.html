@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Paul Reid & Dan Downey" content="Dating Website">
+	
+	<!--Small icon that shows up on the websites tab beside the title-->
+	<link rel="icon" href="img/favicon.png">
+    <title>Voyager</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+	 <link href="css/carousel.css" rel="stylesheet">
+	 
+	<!-- Personalised Style Sheet for this website -->
+	 <link href="css/style.css" rel="stylesheet">
+	
+  </head>
+	
+  
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-inverse" style="border-radius: 0px;" id="navBg">
+      <div class="container" >
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"  aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="navbar-brand" style="list-style:none; margin-bottom:0px;" href="#" data-target="#myCarousel" data-slide-to="0" ><li data-target="#myCarousel" data-slide-to="0">Voyager</li></ul>
+        </div>
+    <!-- The buttons in the top right of the navbar. The data-slide-to is what is making them change what slide the slider is showing.
+		  We used this method to combine all our pages into one to make the website more efficent and minimalistic-->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right" class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0"><a href="#">Home</a></li>
+            <li  data-target="#myCarousel" data-slide-to="1"><a href="#about">About</a></li>
+            <li data-target="#myCarousel" data-slide-to="2" style="padding-left:40px;"><a href="#contact">Sign Up</a></li>
+          </ul>
+		</div>					<!--/.nav-collapse -->
+      </div>               
+    </nav>
+
+
+    <!-- Carousel
+	================================================== -->
+	
+	<div class="container-fluid" id="carouselContainer">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      
+      <!-- Home Slide -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="img/homebg.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+			<img class="img-responsive" src="img/voyagerName.png" alt="A Link to our Twitter page" style="padding-bottom:30%;">
+              <h1>The new and improved dating experience</h1>
+              <p class="btn btn-lg btn-primary" class="carousel-indicators" role="button" data-target="#myCarousel" data-slide-to="2">Sign up today</a></p>
+            </div>
+          </div>
+        </div>    
+	<!-- About Slide -->
+        <div class="item">
+          <div id="qrCover">
+		  <img class="second-slide" src="img/aboutbg.jpg" alt="Second slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Find us on Facebook and Twitter</h1>
+			  <span class="qrHover"><img src="img/facebookqr.png" alt="A QR code to our Facebook page" width="40%" height="40%;"style="padding-right:5px; padding-left:5px;"></span>
+			  <span class="qrHover"><img src="img/twitterqr.png" alt="A QR code to our Twitter page" width="40%" height="40%"style="padding-right:5px; padding-left:5px;"></span>
+              <p id="qrAboutText">Just simply scan one of these QR codes with any Mobile Device / Smart Phone and it will bring you straight to one of our respective social media sites! Be sure to let your friends scan them too!</p>
+              </div>
+          </div>
+        </div>
+      <!-- Sign up Slide -->
+        <div class="item">
+		  <div id="coverDiv">
+          <img class="third-slide" src="img/signupbg.jpg" alt="Third slide">
+		  </div>
+          <div class="container">
+            <div class="carousel-caption">
+		<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+				<form role="form">
+					<h2>Please Sign Up <small>It's free and might always be. Maybe.</small></h2>
+					<hr class="colorgraph">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<div class="form-group">
+								<input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<div class="form-group">
+								<input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Display Name" tabindex="3">
+					</div>
+					<div class="form-group">
+						<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<div class="form-group">
+								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<div class="form-group">
+								<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4 col-sm-3 col-md-3">
+							<span class="button-checkbox">
+								<button type="button" class="btn" data-color="info" tabindex="7">I Agree</button>
+								<input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
+							</span>
+						</div>
+						<div class="col-xs-8 col-sm-9 col-md-9" id="termsAndC">
+							 By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.
+						</div>
+					</div>
+					
+					<hr class="colorgraph">
+					<div class="row">
+						<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+						<div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Sign In</a></div>
+					</div>
+				</form>
+			</div>
+		</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+	<!-- /.carousel -->
+
+
+    <!-- Details on how to use the App and Testimonials
+    ================================================== -->
+
+    <div class="container marketing" style="padding-top:20px;">
+
+      <!-- How to use the App -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/ready.jpg" alt="A picture of someone reaching for the door handle of their car" width="280" height="280">
+      <!-- Ready -->
+          <h2>Ready</h2>
+          <p><em>Make sure you're ready for that perfect date. Haircut? Check. Deodorant? Check. Aftershave? Check. Shower? No? Doesn't matter, just go anyway. Dressed up? Finally, you're ready to get into your car and head off to your random date!</em></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/set.png" alt="A picture of someone pressing our App icon on the dashboard computer of their car" width="280" height="280">
+      <!-- Set -->
+          <h2>Set</h2>
+          <p>Just simply install our app onto your cars on-board computer. Once installed, just press our App's icon in the app tray and your car will bring you to your destination.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/go.jpg" alt="A picture of the back of a self driving car with the reg DRVRLESS driving away" width="280" height="280">
+      <!-- Go -->
+          <h2>Go</h2>
+          <p>Sit back, relax, panic and be driven to your new-found destination and prepare to meet whomever our app has matched you with for tonight!</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- Testimonials -->
+
+      <hr class="featurette-divider">
+      <!-- Woman's section with her testimonial -->
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">The best date I've ever had. <span class="text-muted">They paid me to write this</span></h2>
+          <p class="lead"><em>"I like the idea but I don't actually own a car.. I don't know how they expect me to write about this but they insited on paying me for it so I'm hardly going to say no, right?"</em></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="img/girl.jpg" alt="Picture of a woman who has used our service">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- Man's section with his testimonial -->
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">The date lasted an hour. <span class="text-muted">Well that was quick.</span></h2>
+          <p class="lead"><em>"Does this shirt look too tight on me? What? You're already writing the transcript?! Yeah, the uh, dating app was great. My car just brought me straight to a restaurant and my date was already sitting inside waiting.. what more could I really ask for? *forced-laughter* "</em></p>
+        </div> 
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="img/guy.jpg" alt="Picture of a man who has used our service" style="padding-top:45px">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- Upside down person's section with their testimonial -->
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Followed instructions as outlined <span class="text-muted">but it didn't work</span></h2>
+          <p class="lead"><em>"I got matched with someone from emergency services so my car decided the best way to meet them would be to crash into a ditch.. I guess it worked. 8/10"</em></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="img/wrong.jpg" alt="A picture of our service gone wrong" style="padding-top:50px">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+	  <div class="row featurette">
+        <div class="col-md-12">
+		<embed src="img/Animation.swf" height="100%" width="100%"> </embed>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+
+	  	<!-- Modal (The pop-up for when you click terms and conditions)-->
+		<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">VOYAGER Terms of Service</h4>
+					</div>
+					<div class="modal-body">
+						<p>1. Ownership </p><p>VOYAGER reserves the right to comandeer your vehicle in the event of war, apocalypse, rapture or even if we feel like it. We also own your phone, you can't delete us, don't even try.</p>
+						<p>2. Payment</p><p> VOYAGER store accepts the following forms of payment: credit cards, payments through PayPal, One-4-All gift cards, Christmas cards with money in them, maybe birthday cards (we haven't decided), kidneys or sexual favours.</p>
+						<p>3. Charges</p> Prices for the service will change, we plan on becoming a cash cow. When the service becomes pay-2-date you will pay immediately. If your payment details change and we are unable to recieve payment then you better lawyer up.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		</div>
+		
+	  
+
+
+      <!-- FOOTER -->
+	  
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+		<a href="https://twitter.com/VoyagerDating"  target="_blank" > <img src="img/twitter.png" alt="A Link to our Twitter page" style="padding-right:5px; padding-left:5px;"> </a>
+		<a href="https://www.facebook.com/VoyagerDating/photos_stream" target="_blank" > <img src="img/facebook.png" alt="A Link to our Face page"> </a>
+		<p>&copy; 2015 Voyager Dating. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </div>
+	<!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	-->
+	
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/signup.js"></script>
+    
+	
+    <!-- Small JQuery script for dimming the page when you hover over a QR Code -->
+	<script>
+	$(".qrHover").hover(function(){
+    $("#qrCover").animate({'opacity':'0.5'}, 100);
+    }, function(){
+    $("#qrCover").animate({'opacity':'1.0'}, 100);
+	});
+	</script>
+  </body>
+</html>
